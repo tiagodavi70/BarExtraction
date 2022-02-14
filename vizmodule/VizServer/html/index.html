@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visualizations</title>
+    <script src="library/underscore.min.js"></script>
+    <script src="library/d3.min.js"></script>
+    <script src="library/vega-core.min.js"></script>
+    <script src="library/socket.io-slim.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="chartHolder_1"></div>
+        <div id="ui">
+            <div>
+                <label>Upload image </label><input id="uploadImage" type="file" name="chartimage" />
+                <label>Upload Dataset </label><input id="uploadDataset" disabled="disabled" type="file"  name="chartdata" />
+                <label>Enter Dataset URL </label><input id="textDataset" disabled="disabled" type="text" name="chartarray" />
+                <button id="camera">Start Camera Stream</button>
+            </div>
+        </div>
+        <div id="preview">
+            <img id="uploadPreview" />
+            <p id="infoText"> </p>
+        </div>
+    </div>
+</body>
+<script src="src/com.js"></script>
+<script src="src/charts/chartgen.js"></script>
+<script src="src/ui.js"></script>
+<script src="src/webapp.js"></script>
+</html>
